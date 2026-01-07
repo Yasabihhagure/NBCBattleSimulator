@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { TeamConfig } from './components/TeamConfig';
 import { SimulationRunner } from './components/SimulationRunner';
 import { ResultsView } from './components/ResultsView';
+import { BatchBattleRunner } from './components/BatchBattleRunner';
 import { Team } from './domain/Team';
 import { Simulator } from './domain/Simulator';
 import type { SimulationSummary } from './domain/Simulator';
@@ -71,7 +72,7 @@ function App() {
     <div className="min-h-screen">
       <header className="mb-8">
         <h1>信長の黒い城戦闘シミュレータ</h1>
-        <p className="text-sm text-gray-400">v1.0.0</p>
+        <p className="text-sm text-gray-400">v1.1.0</p>
       </header>
 
       <main className="max-w-4xl mx-auto flex flex-col gap-8 pb-12">
@@ -83,6 +84,8 @@ function App() {
           randomizeTeamA={randomizeTeamA}
           onSetRandomizeTeamA={setRandomizeTeamA}
         />
+
+        <BatchBattleRunner />
 
         <SimulationRunner onRun={handleRunSimulation} isRunning={isRunning} />
 
