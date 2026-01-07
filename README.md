@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# 信長の黒い城 戦闘シミュレータ (NBCBattleSimulator)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+『信長の黒い城』TRPGの戦闘シミュレーションを行うWebアプリケーションです。
+複数のチームによる戦闘を自動実行し、勝率や生存率を算出します。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **戦闘シミュレーション**: プレイヤーチーム vs NPCチームの戦闘を数千回自動実行。
+*   **詳細な設定**: メンバーの装備、能力値、敵対関係を自由に設定可能。
+*   **バッチ処理**: CSVファイルによる戦闘条件の一括実行（PC版のみ）。
+*   **レスポンシブ対応**: スマートフォンでも結果確認や簡易実行が可能。
 
-## React Compiler
+## 利用方法
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### オンラインで利用する場合
+（GitHub Pages等で公開されたURLにアクセスしてください）
 
-## Expanding the ESLint configuration
+### ローカルで実行する場合
+Node.jsが必要です。
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. リポジトリをクローンまたはダウンロード
+2. 依存パッケージのインストール
+   ```bash
+   npm install
+   ```
+3. 開発サーバーの起動
+   ```bash
+   npm run dev
+   # スマホからアクセスする場合
+   npm run dev -- --host
+   ```
+4. ブラウザで `http://localhost:5173` にアクセス
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## バッチ戦闘シミュレーションについて
+画面幅が広いPC環境でのみ利用可能です。スマートフォンなどの狭い画面では機能が非表示になります。
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ライセンスと権利表記 (License & Legal)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+このソフトウェアは [MIT License](LICENSE) の下で公開されています。
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### MÖRK BORG Third Party License
+NBCBattleSimulator is an independent production by [Author Name] and is not affiliated with Ockult Örtmästare Games or Stockholm Kartell. It is published under the MÖRK BORG Third Party License.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+**Note**: This tool deals with game mechanics and data derived from "Nobunaga's Black Castle" (Nobunaga no Kuroi Shiro), a MÖRK BORG hack.

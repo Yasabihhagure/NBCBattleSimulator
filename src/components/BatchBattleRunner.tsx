@@ -149,7 +149,7 @@ export const BatchBattleRunner = () => {
     };
 
     return (
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+        <div className="hidden md:block bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <span>📊</span> バッチ戦闘シミュレーション
             </h2>

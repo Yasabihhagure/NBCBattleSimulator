@@ -18,11 +18,12 @@
   --color-bg-card-hover: #252932;
   --color-primary: #646cff;
   --color-primary-hover: #747bff;
-  --color-accent: #ff4081; /* Vibrant Pink for critical actions */
+  --color-accent: #ff4081;
+  /* Vibrant Pink for critical actions */
   --color-success: #00e676;
   --color-warning: #ffea00;
   --color-danger: #ff1744;
-  
+
   --glass-bg: rgba(28, 31, 38, 0.7);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -39,7 +40,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--color-bg-base);
-  background-image: 
+  background-image:
     radial-gradient(at 0% 0%, rgba(100, 108, 255, 0.15) 0px, transparent 50%),
     radial-gradient(at 100% 100%, rgba(255, 64, 129, 0.10) 0px, transparent 50%);
   background-attachment: fixed;
@@ -70,7 +71,7 @@ body {
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
   border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -86,7 +87,8 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #fff;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -145,10 +147,44 @@ button:focus-visible {
 
 /* Animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  button,
+  input,
+  select {
+    min-height: 44px;
+    /* Touch target size */
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+    /* Stack grids on mobile */
+  }
 }
