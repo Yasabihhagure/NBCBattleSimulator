@@ -1,7 +1,7 @@
 {
   "name": "temp-app",
   "private": true,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "homepage": "https://[YOUR_GITHUB_USERNAME].github.io/NBCBattleSimulator",
   "scripts": {

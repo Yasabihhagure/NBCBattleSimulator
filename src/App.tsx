@@ -72,7 +72,7 @@ function App() {
     <div className="min-h-screen">
       <header className="mb-8">
         <h1>信長の黒い城戦闘シミュレータ</h1>
-        <p className="text-sm text-gray-400">v1.2.0</p>
+        <p className="text-sm text-gray-400">v1.2.1</p>
       </header>
 
       <main className="max-w-4xl mx-auto flex flex-col gap-8 pb-12">

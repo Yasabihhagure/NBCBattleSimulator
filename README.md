@@ -39,7 +39,7 @@ Node.jsが必要です。
 このソフトウェアは [MIT License](LICENSE) の下で公開されています。
 
 ### MÖRK BORG Third Party License
-NBCBattleSimulator is an independent production by [Author Name] and is not affiliated with Ockult Örtmästare Games or Stockholm Kartell. It is published under the MÖRK BORG Third Party License.
+NBCBattleSimulator is an independent production by @Yasabihhagure and is not affiliated with Ockult Örtmästare Games or Stockholm Kartell. It is published under the MÖRK BORG Third Party License.
 
 MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.
 
