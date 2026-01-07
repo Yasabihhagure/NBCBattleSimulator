@@ -13,7 +13,10 @@
 ## 利用方法
 
 ### オンラインで利用する場合
-（GitHub Pages等で公開されたURLにアクセスしてください）
+
+以下のURLにアクセスしてください。
+
+https://yasabihhagure.github.io/NBCBattleSimulator/
 
 ### ローカルで実行する場合
 Node.jsが必要です。
