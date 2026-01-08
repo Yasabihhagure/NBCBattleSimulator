@@ -38,6 +38,7 @@ export const MemberEditor: React.FC<MemberEditorProps> = ({ onSave, onCancel }) 
             let ammo = weaponDef.ammo;
             if (ammo === 'Heart+5') ammo = `${stats.heart + 5}`;
             if (ammo === 'Heart+3') ammo = `${stats.heart + 3}`;
+            if (ammo === 'Heart+4') ammo = `${stats.heart + 4}`;
 
             const weapon = W(weaponDef.name, weaponDef.type, weaponDef.damage, weaponDef.hit, weaponDef.targetHit, ammo);
             h.weapons = [weapon];

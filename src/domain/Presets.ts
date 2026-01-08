@@ -291,4 +291,5 @@ export const PlayerWeapons = [
     { id: 10, name: "大槍", type: "近接武器", damage: "1D8", hit: "体DR12", targetHit: "技DR12" },
     { id: 11, name: "爆裂弾", type: "射撃武器", damage: "1D4", hit: "心DR12", targetHit: "技DR12", ammo: "Heart+3" },
     { id: 12, name: "斬馬刀", type: "近接武器", damage: "1D10", hit: "体DR12", targetHit: "技DR12" },
+    { id: 13, name: "弓矢", type: "射撃武器", damage: "1D6", hit: "心DR12", targetHit: "技DR12", ammo: "Heart+4" },
 ];
