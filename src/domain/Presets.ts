@@ -101,8 +101,8 @@ export const MonsterPresets: Record<string, () => Monster> = {
         ];
         return m;
     },
-    "第六点魔王信長": () => {
-        const m = new Monster(crypto.randomUUID(), "第六点魔王信長", "108", 0, "-1D10", null);
+    "第六天魔王信長": () => {
+        const m = new Monster(crypto.randomUUID(), "第六天魔王信長", "108", 0, "-1D10", null);
         m.morale = 99;
         m.weapons = [
             { ...W("へし切り長谷部", "近接武器", "1D12+1", undefined, "技DR15", "-1", "信長の攻撃", "1"), usageType: 'Sequential', seqIndex: 1, name: "へし切り長谷部" }
