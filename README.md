@@ -41,7 +41,7 @@ Node.jsが必要です。
 
 ## ライセンスと権利表記 (License & Legal)
 
-このソフトウェアは [MIT License](LICENSE) の下で公開されています。
+このソフトウェアは [MIT License](https://opensource.org/licenses/mit-license.php) の下で公開されています。
 
 ### MÖRK BORG Third Party License
 NBCBattleSimulator is an independent production by @Yasabihhagure and is not affiliated with Ockult Örtmästare Games or Stockholm Kartell. It is published under the MÖRK BORG Third Party License.
@@ -50,3 +50,13 @@ MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.
 
 ---
 **Note**: This tool deals with game mechanics and data derived from "Nobunaga's Black Castle" (Nobunaga no Kuroi Shiro), a MÖRK BORG hack.
+
+## 免責事項
+
+本ソフトウェアは「現状のまま」提供され、商品性、特定目的への適合性、および権利非侵害の保証を含むがこれらに限定されない、明示的または黙示的な保証を一切行いません。
+本ソフトウェアの使用に起因する直接的、間接的、偶発的、特別、典型的、または結果的な損害（代替品またはサービスの調達、使用、データ、または利益の損失、または業務中断を含むがこれらに限定されない）について、作者はいかなる責任も負いません。
+ご利用は自己責任でお願いいたします。
+
+## 著作権
+
+Copyright © 2026 Yasabihhagure All Rights Reserved.
