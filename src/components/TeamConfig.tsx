@@ -122,12 +122,7 @@ export const TeamConfig: React.FC<TeamConfigProps> = ({ teams, onUpdateTeams, en
 
     return (
         <div className="flex flex-col gap-6">
-            {editingTeamId && (
-                <MemberEditor
-                    onSave={handleAddCustom}
-                    onCancel={() => setEditingTeamId(null)}
-                />
-            )}
+
             <div className="flex justify-between items-center">
                 <h2>チーム設定</h2>
                 <div className="flex gap-4 items-center">
@@ -244,6 +239,13 @@ export const TeamConfig: React.FC<TeamConfigProps> = ({ teams, onUpdateTeams, en
                                     ))}
                                 </select>
                             </div>
+
+                            {editingTeamId === team.id && (
+                                <MemberEditor
+                                    onSave={handleAddCustom}
+                                    onCancel={() => setEditingTeamId(null)}
+                                />
+                            )}
                         </div>
                     </div>
                 ))}
